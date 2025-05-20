@@ -1,6 +1,9 @@
-name: Build Kernel
+name: Build Kernel Redmi K20Pro (Soviet-Star-OSS)(Based-AOSP A15) with KSU and SUSFS
 on:
+  workflow_call:
   workflow_dispatch:
+env:
+  HOOK_METHOD: "normal" # manual hook method,can choice vfs and normal.
 
 jobs:
   build:
